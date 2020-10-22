@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="Gray" xmlns:local="clr-namespace:appej;assembly=appej" 
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local1="clr-namespace:Mobile.Droid.Renderers"
+             x:Class="appej.Home">
+
+<!--navigation para ponerle nombre-->
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label 
+                Text="                     INICIO" TextColor="White" FontSize="20">
+                <!-- HorizontalTextAlignment="Center" VerticalTextAlignment="Center"-->
+       </Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+    </NavigationPage.TitleView>
+<!--color de fondo-->
+    <StackLayout BackgroundColor="#EFF0F5">
+  
+        <Image Margin="20,20,20,22" Source="fdf.png" HorizontalOptions="Center"></Image>
+        <Label  Text="INICIAR SESION" FontAttributes="Bold" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" ></Label>
+        <Label  Text="Bienvenidos a Nuestra App"  FontSize="Small" TextColor="Black" HorizontalTextAlignment="Center" ></Label>
+        
+            <!-- utilizamos label debido a que los entry no se apegan al dise;o original -->
+            <Frame BorderColor="Transparent" CornerRadius="10" HasShadow="False" Margin="20,40,10,0"  >
+               
+            <Label Text="Email*" />
+        </Frame>
+            <Frame BorderColor="Transparent" CornerRadius="10" HasShadow="false" Margin="20,10,10,20">
+            <Label Text="Password*" />
+            
+                
+            </Frame>
+       <!-- <Entry   IsPassword="True" Placeholder="Password*"  TextColor="Black" BackgroundColor="Transparent" ></Entry>
+             <Entry  Keyboard="Email" Placeholder="Email*"  TextColor="Black" BackgroundColor="Transparent" ></Entry>
+        -->
+
+
+        <StackLayout>
+            <!--dise;o de botones-->
+       <Button Text="Iniciar Sesion" 
+                   x:Name="Butt1"
+               CornerRadius="40"
+                BorderColor="Black"
+                FontAttributes="Bold"
+                BackgroundColor="#76B78F" 
+                TextColor="White" 
+                BorderRadius="35" 
+                HorizontalOptions="Fill"
+                WidthRequest="200"
+                HeightRequest="70" 
+                Margin="20,20,20,22" />
+        </StackLayout>
+        <StackLayout>
+            <!--dise;o de segundo boton-->
+        <Button Text="Sign in With Facebook"
+                VerticalOptions="CenterAndExpand"
+                CornerRadius="40"
+                ImageSource="c.png" Padding="30,0,0,0"
+                 x:Name="Butt2"
+                BorderColor="Black"
+                BorderWidth="1" 
+                FontAttributes="Bold"
+                BackgroundColor="#2463EE" 
+                BorderRadius="35" 
+                TextColor="White" 
+                HorizontalOptions="Fill"
+                WidthRequest="200"
+                HeightRequest="70" 
+                Margin="20,25,20,22" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
