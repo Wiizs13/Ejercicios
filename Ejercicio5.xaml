@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Info" x:Class="Info.MainPage">
+    <StackLayout>
+        <!--definimois un grid-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+
+            <!--utilizamos un scrollview para desplazarse por la aplicacion-->
+            <ScrollView Grid.Row="0">
+                <StackLayout HorizontalOptions="Center" 
+                             VerticalOptions="Start" 
+                             BackgroundColor="#2A253C" Grid.Row="0">
+                    <!--utilizamos un imagen como baner-->
+                    <Image Margin="0,50,0,0" 
+                           x:Name="imgBanner" 
+                           Source="logo.png" ></Image>
+                    <!--texto principal-->
+                    <Label Margin="0,0,0,10" 
+                           Text="¿QUE ES LA RENTA?" 
+                           FontAttributes="Bold"
+                           FontSize="Large" 
+                           TextColor="#F73F7D" 
+                           HorizontalTextAlignment="Center" ></Label>
+                    <!--primer parrafo-->
+                    <StackLayout BackgroundColor="#423D5D" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Start">
+                        <Label Margin="10,10,10,10" 
+                          Text="La renta como tal es uno de los conceptos básicos de la economía, clave para la determinación de las grandes macromagnitudes de un país y fundamental en el ámbito de la Economía Pública, tanto en la configuración de algunos de los principales impuestos como en la actuación del Estado a partir del gasto público.El concepto económico de renta parte de un enfoque amplio. En la contabilidad nacional la renta supone la remuneración que obtienen los factores productivos (capital y trabajo) por su participación en los procesos de producción de bienes y servicios. Esa corriente económica revierte en las propias empresas generadoras de esos bienes y servicios en forma del gasto que realizan las familias, cerrando ese flujo circular que tiene en la renta su principal elemento. En macroeconomía la utilización de la renta como elemento para medir el bienestar económico es muy frecuente. Así, la suma de las rentas de los distintos factores productivos a partir de la remuneración de asalariados, excedente bruto de explotación y/o las rentas mixtas donde se combina capital y trabajo, da lugar a la Renta Nacional y su distribución entre los nacionales de un país a la 'renta per capita', que es uno de los principales índices comparativos en materia económica a nivel internacional." 
+                                FontSize="Medium" 
+                               TextColor="#fff" 
+                               HorizontalTextAlignment="Start" ></Label>
+
+                        <!--mensaje secundario de articulo-->
+                        <StackLayout BackgroundColor="#fff" 
+                                     HorizontalOptions="Center" 
+                                     VerticalOptions="Start">
+                            <Label Margin="0,0,0,10" 
+                                   Text="Art 1" 
+                                   FontAttributes="Bold" 
+                                   FontSize="Large" 
+                                   TextColor="#F73F7D" 
+                                   HorizontalTextAlignment="Center" ></Label>
+                            <!--segundo parrafo-->
+                            <Label Margin="10,10,10,10" 
+                                   Text=" La obtención de rentas por los sujetos pasivos en el ejercicio o período de imposición de que se trate, genera la obligación de pago del impuesto establecido en esta Ley" 
+                                   FontSize="Medium" 
+                                   TextColor="#000" 
+                                   HorizontalTextAlignment="Start" ></Label>
+                            <!--tercer mensaje secundario-->
+                            <Label Margin="0,0,0,10" 
+                                   Text="Art 2" 
+                                   FontAttributes="Bold"
+                                   FontSize="Large"
+                                   TextColor="#F73F7D" 
+                                   HorizontalTextAlignment="Center" ></Label>
+                            <!--tercer parrafo-->
+                            <Label Margin="10,10,10,10" 
+                                   Text="Se entiende por renta obtenida, todos los productos o utilidades percibidas o devengados por los sujetos pasivos, ya sea en efectivo o en especie y provenientes de cualquier clase de fuente, tales como: " 
+                                   FontSize="Medium" 
+                                   TextColor="#000" 
+                                   HorizontalTextAlignment="Start" ></Label>
+                            <!--estos label son para los literales del tercer parrafo-->
+                            <Label Margin="10,10,10,10" 
+                                   Text="a) Del trabajo, ya sean salarios, sueldos, honorarios, comisiones y toda clase de remuneraciones o compensaciones por servicios personales " 
+                                   FontSize="Medium" 
+                                   TextColor="#000" 
+                                   HorizontalTextAlignment="Start" ></Label>
+                            <Label Margin="10,10,10,10" Text="b) De la actividad empresarial, ya sea comercial, agrícola, industrial, de servicio y de cualquier otra naturaleza" 
+                                   FontSize="Medium" 
+                                   TextColor="#000"
+                                   HorizontalTextAlignment="Start" ></Label>
+                            <Label Margin="10,10,10,10" Text="c) Del capital tales como, alquileres, intereses, dividendos o participaciones " 
+                                   FontSize="Medium" 
+                                   TextColor="#000" 
+                                   HorizontalTextAlignment="Start" ></Label>
+                            <Label Margin="10,10,10,10" 
+                                   Text="d) Toda clase de productos, ganancias, beneficios o utilidades, cualquiera que sea su origen. " 
+                                   FontSize="Medium" 
+                                   TextColor="#000"
+                                   HorizontalTextAlignment="Start" ></Label>
+
+                            
+
+                        </StackLayout>
+
+                        <!--inicio de la tabla -->
+                        <StackLayout>
+
+                            <ScrollView>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--titulos -->
+                                    <Label Grid.Row="0" Grid.Column="0" Text=" "
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="DESDE" FontSize="15" TextColor="White" FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="0" Grid.Column="2" Text="HASTA" FontSize="15" TextColor="White" FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="0" Grid.Column="3" Text="% A Aplicar" FontSize="15" TextColor="White" FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="0" Grid.Column="4" Text="Sobre el Exceso de" FontSize="15" TextColor="White" FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="0" Grid.Column="5" Text="Cuota Fija" FontSize="15" TextColor="White" FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <!--fila 1  -->
+                                    <Label Grid.Row="1" Grid.Column="0" Text=" I TRAMO" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="1" Grid.Column="1" Text="$0.01" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="1" Grid.Column="2" Text="$472.00" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="1" Grid.Column="3" Text="-" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="1" Grid.Column="4" Text="-" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="1" Grid.Column="5" Text="-" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+                                    <!--dFila2 -->
+
+                                    <Label Grid.Row="2" Grid.Column="0" Text=" II TRAMO" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="2" Grid.Column="1" Text="$472.01" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="2" Grid.Column="2" Text="$895.24" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="2" Grid.Column="3" Text="10%" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="2" Grid.Column="4" Text="$472.00" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="2" Grid.Column="5" Text="$17.67" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+
+                                    <!--fila 3  -->
+                                    <Label Grid.Row="3" Grid.Column="0" Text=" III TRAMO" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="3" Grid.Column="1" Text="$895.25" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="3" Grid.Column="2" Text="$2,038.10" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="3" Grid.Column="3" Text="20%" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="3" Grid.Column="4" Text="$895.24" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="3" Grid.Column="5" Text="$60.00" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <!--fila 4  -->
+
+                                    <Label Grid.Row="4" Grid.Column="0" Text=" IV TRAMO" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="4" Grid.Column="1" Text="$2,038.11" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="4" Grid.Column="2" Text="EN ADELANTE" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="4" Grid.Column="3" Text="30%" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="4" Grid.Column="4" Text="$2,038.11" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                                    <Label Grid.Row="4" Grid.Column="5" Text="$288.57" FontSize="15" TextColor="White" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+                                </Grid>
+
+                            </ScrollView>
+
+                        </StackLayout>
+                        <!--aqui cierra la tabla -->
+                        
+                        <!--Imagen de fondo -->
+                        <Image Margin="0,50,0,0" 
+                           x:Name="imglo" 
+                           Source="FON.png" ></Image>
+                    </StackLayout>
+                </StackLayout>
+                
+            </ScrollView>
+           
+            <!--declaramos un boton -->
+            <!--este boton sera flotante-->
+            <Button Grid.Row="0" Text="Calcular Renta" 
+                ImageSource="we.png" 
+                    x:Name="Butt"
+                BorderColor="Transparent"
+                BorderWidth="1" FontAttributes="Bold"
+                BackgroundColor="#F73F7D" BorderRadius="25" 
+                TextColor="White" 
+                HorizontalOptions="End"
+                WidthRequest="200"
+                HeightRequest="70" 
+                Margin="0,0,20,22" 
+                VerticalOptions="End" />
+            <!--le decimos que se posicione en la posicion baja de la aplicacion-->
+        </Grid>
+
+        
+
+    </StackLayout>
+</ContentPage>
