@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Info.Second">
+ 
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#E1DEEB">
+
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="FG.png" ></Image>
+            <Label Margin="0,0,0,10" Text="Introdusca su salario" FontAttributes="Bold" FontSize="Large" TextColor="#F73F7D" HorizontalTextAlignment="Center" ></Label>
+            <Entry Margin="0,0,0,10" Placeholder="Salario" x:Name="entrada" BackgroundColor="#423D5D" TextColor="#fff"></Entry>
+            <Button Text="Calcular" 
+                   x:Name="Butto"
+                BorderColor="Transparent"
+                BorderWidth="1" FontAttributes="Bold"
+                BackgroundColor="#F73F7D" BorderRadius="25" 
+                TextColor="White" 
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="200"
+                HeightRequest="70" 
+                Margin="0,0,20,22" 
+                VerticalOptions="End" 
+                    Clicked="Butto_Clicked"/>
+        <Label Margin="0,0,0,10" Text=" " x:Name="mensaje" FontSize="Medium" TextColor="Black"></Label>
+        <Label Margin="0,0,0,10" Text=" " x:Name="lab" FontSize="Medium" TextColor="Black"></Label>
+        <Label Margin="0,0,0,10" Text=" " x:Name="lab1" FontSize="Medium" TextColor="Black" ></Label>
+        <Label Margin="0,0,0,10" Text=" " x:Name="lab2" FontSize="Medium" TextColor="Black"></Label>
+    </StackLayout>
+  
+</ContentPage>
