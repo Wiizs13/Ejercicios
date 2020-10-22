@@ -1,1 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.MainPage"
+             Title="hOLAAAA">
 
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#81C4A1" HeightRequest="30">
+            <FlexLayout>
+
+                <!--texto del frame-->
+                <Label
+                    TextColor="White"
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="                            Registrar">
+                </Label>
+            </FlexLayout>
+        </Frame>
+        <!--inicio del scrollview-->
+        <ScrollView>
+       
+
+           
+            <StackLayout>
+                    <!--imagen del arbol-->
+                <Image Source="fdf.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="Fill"></Image>
+            <!--creacion de las tablas-->
+                <Grid Margin="20,10,20,0" RowSpacing="10" >
+        
+            <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+                <!--creacion de los label-->
+                    <!--usamos label ya que apegandonos al disenio original-->
+                    <!--los entry dejan una linea en la parte posterior  -->
+                    <!--por motivos de tiempo y disenio desidimos usar los label-->
+                    <Frame  Grid.Row="0"
+            Grid.Column="0">
+            <Label
+
+             Text="First Name"
+            />
+                    </Frame>
+                    <Frame         Grid.Row="0"
+            Grid.Column="1">
+
+                    <Label
+    
+                Text="Last Name"
+              />
+                    </Frame>
+
+
+                </Grid>
+
+           <!--se usan dos grid para que no interfieran en los disenios-->
+        
+                
+                <!--creacion del segundo grid-->
+        <Grid Margin="20,10,20,0" RowSpacing="10" HeightRequest="400">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+<!--definicion de los label-->
+                    <Frame        Grid.Row="0"
+            Grid.Column="0">
+            <Label
+     
+                Text="Email address"
+             />
+                    </Frame>
+                    <Frame Grid.Row="1"
+            Grid.Column="0">
+                    <Label
+            
+                        Text="Choose Password"
+         />
+                    </Frame>
+                    <Frame  Grid.Row="2"
+            Grid.Column="0">
+                    <Label
+           
+                        Text="Birthday"
+        />
+                    </Frame>
+                    <Frame   Grid.Row="3"
+            Grid.Column="0">
+                    <Label
+    
+                        Text="Gender"
+             />
+                    </Frame>
+            <!-- frame -->
+                    <Frame Grid.Row="4"
+            Grid.Column="0">
+                    <Label
+                        Text="Phone Number"
+           />
+                   </Frame>
+
+                    <Button Text="Enviar" CornerRadius="15" BackgroundColor="#81C4A1" Grid.Row="5" Grid.Column="0"/>
+            <!-- definicion del boton -->
+
+            </Grid>
+
+            
+        </StackLayout>
+        </ScrollView>
+    </StackLayout>
+ 
+</ContentPage>
