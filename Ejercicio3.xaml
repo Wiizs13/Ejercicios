@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.MainPage">
+<!--color de fondo-->
+    <StackLayout BackgroundColor="#fff">
+        <!--color del frame-->
+        <Frame BackgroundColor="#6B8C7B" HeightRequest="30">
+            <FlexLayout>
+                <!--imagen que estara en el frame-->
+                <Image 
+                     Margin="20,0,110,0"
+                     Source="name.png"
+                     WidthRequest="30"      
+                     HeightRequest="30"></Image>
+                <!--texto del frame-->
+                <Label
+                    TextColor="White"
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Feed">
+                </Label>
+            </FlexLayout>
+        </Frame>
+        <!--inicio del scroll para poder navegar-->
+        <ScrollView>
+            <Grid>
+                <!--definimos las tablas-->
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="180"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <!--ocupamos esto ya que el scroll no baja a los ultimos datos-->
+                <BoxView Grid.Row="4" Grid.ColumnSpan="5" BackgroundColor="#ffff"></BoxView>
+                <!--definimos el primer item-->
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="5">
+                    <FlexLayout Padding="13">
+                        <!--imagen del usuario-->
+                        <Image WidthRequest="60" HeightRequest="50" Source="name.png">
+                        </Image>
+                        <StackLayout>
+                            <Label TextColor="Black" Text="Carlos McBride" FontSize="20" FontAttributes="Bold" Margin="12,0,0,0" ></Label>
+                            <Label TextColor="Black" Text="Photo" FontSize="14"  Margin="12,0,0,0" ></Label>
+                        </StackLayout>
+                        <!--correo del autor-->
+                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" Margin="30,0,0,0" Text="@mcbride-16h">
+
+
+                        </Label>
+
+
+                    </FlexLayout>
+                    <StackLayout>
+                        <!--definimos un frame donde estara la imagen-->
+                        <Frame Margin="80,0,40,0"
+                               BorderColor="Black"
+                               CornerRadius="12"
+                               IsClippedToBounds="True"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               >
+                            <!--insertamos la imagen-->
+                            <Image Source="logpo.png"
+                                   Aspect="Fill"
+                                   Margin="-20"
+                                   HeightRequest="150"
+                                   WidthRequest="390"></Image>
+
+                        </Frame>
+
+                    </StackLayout>
+                    <!-- iconos de la parte baja -->
+                    <FlexLayout Margin="80,0,0,0">
+                        <Image Source="mensaje.png"></Image>
+                        <Label Text="34" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="ret.png" Margin="12,0,0,0"></Image>
+                        <Label Text="2" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="cora.png"></Image>
+                        <Label Text="56" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="envi.png" Margin="12,0,0,0"></Image>
+                    </FlexLayout>
+
+                </StackLayout>
+
+
+                <!-- primer autor -->
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="5">
+                    <FlexLayout Padding="13">
+                        <Image WidthRequest="60" HeightRequest="50" Source="name.png" ></Image>
+                        <StackLayout>
+                            <Label TextColor="Black" Text="Carlos Bremer" FontSize="20" Margin="12,12,0,0" FontAttributes="Bold"></Label>
+                        </StackLayout>
+                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" Margin="30,0,0,0" Text="@mcbride-16h">
+                        </Label>
+                    </FlexLayout>
+                    <!--mensaje -->
+                    <StackLayout Margin="80,0,0,0">
+                        <Label Padding="5"
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand"
+                               Text="He empezado una serie de reviews de libros CSS que nos pueden servir para convertirnos en auténticas/os artesanas/os del desarrollo CSS."
+                               FontSize="18">
+                        </Label>
+                    </StackLayout>
+                    <!--iconos de la parte baja-->
+                    <FlexLayout Margin="80,0,0,0">
+                        <Image Source="mensaje.png"></Image>
+                        <Label Text="34" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Margin="12,0,0,0" Source="ret.png"></Image>
+                        <Label Text="51" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="cora.png" Margin="12,0,0,0"></Image>
+                        <Label Text="95" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="envi.png" Margin="12,0,0,0"></Image>
+                    </FlexLayout>
+                </StackLayout>
+                <!-- SEGUNDO-->
+                <StackLayout Grid.Row="2" Grid.ColumnSpan="5" >
+                    <FlexLayout Padding="13">
+                        <Image WidthRequest="60" HeightRequest="50" Source="name.png" Margin="0,30,0,0"></Image>
+                        <StackLayout>
+                            <Label TextColor="Black" Text="Carlos" FontSize="20" Margin="12,40,0,0"  FontAttributes="Bold"></Label>
+                        </StackLayout>
+                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" Margin="100,25,0,0" Text="@mcbride-16h">
+                        </Label>
+                    </FlexLayout>
+                    <!--mensaje-->
+                    <StackLayout Margin="80,0,0,0">
+                        <Label Padding="5"
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand"
+                               Text="He empezado una serie de reviews de libros CSS que nos pueden servir para convertirnos en auténticas/os artesanas/os del desarrollo CSS."
+                               FontSize="18">
+                        </Label>
+                    </StackLayout>
+                    <!--iconos de la parte baja-->
+                    <FlexLayout Margin="80,0,0,0">
+                        <Image Source="mensaje.png"></Image>
+                        <Label Text="34" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Margin="12,0,0,0" Source="ret.png"></Image>
+                        <Label Text="51" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="cora.png" Margin="12,0,0,0"></Image>
+                        <Label Text="95" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="envi.png" Margin="12,0,0,0"></Image>
+                    </FlexLayout>
+                </StackLayout>
+
+                <!--TERCERO-->
+
+
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="5" Margin="0">
+                    <FlexLayout Padding="13">
+                        <Image WidthRequest="60" HeightRequest="50" Source="name.png" Margin="0,50,0,0"></Image>
+                        <StackLayout>
+                            <Label TextColor="Black" Text="Leonora" FontSize="20" Margin="12,60,0,0" FontAttributes="Bold"></Label>
+                        </StackLayout>
+                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" Margin="80,50,0,0" Text="@mcbride-16h">
+                        </Label>
+                    </FlexLayout>
+                    <!--mensaje-->
+                    <StackLayout Margin="80,0,0,0">
+                        <Label Padding="5"
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand"
+                               Text="He empezado una serie de reviews de libros CSS que nos pueden servir para convertirnos en auténticas/os artesanas/os del desarrollo CSS."
+                               FontSize="18">
+                        </Label>
+                    </StackLayout>
+                    <!--iconos de la parte baja-->
+                    <FlexLayout Margin="80,0,0,0">
+                        <Image Source="mensaje.png"></Image>
+                        <Label Text="34" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Margin="12,0,0,0" Source="ret.png"></Image>
+                        <Label Text="51" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="cora.png" Margin="12,0,0,0"></Image>
+                        <Label Text="95" VerticalTextAlignment="Center" Margin="12"></Label>
+                        <Image Source="envi.png" Margin="12,0,0,0"></Image>
+                    </FlexLayout>
+                </StackLayout>
+<!--cieerra el grid-->
+            </Grid>
+
+
+
+        </ScrollView>
+
+
+    </StackLayout>
+
+</ContentPage>
