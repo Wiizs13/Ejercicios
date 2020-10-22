@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appk.Home">
+    <!--navigation para agregar nombre -->
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label 
+                Text="          CONFIGURACION" TextColor="White" FontSize="20">
+                <!-- se utilizan los espacios ya que genera un error con el siguiente codigo-->
+                <!-- HorizontalTextAlignment="Center" VerticalTextAlignment="Center"-->
+            </Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+    </NavigationPage.TitleView>
+    <!-- cierre de navegation-->
+    <!-- background-->
+    <StackLayout BackgroundColor="#EFF1F8">
+        <!--inicio de tablas -->
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition>
+                <RowDefinition  Height="*"></RowDefinition> 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="410" ></ColumnDefinition>
+                <!--ancho de las columnas -->
+
+            </Grid.ColumnDefinitions>
+            
+            <BoxView Color="#ffffff" Grid.Row="0" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="1" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="2" Grid.Column="0"  />
+            <!--Se utiliza para el color de fondo -->
+            <BoxView Color="#ffffff" Grid.Row="3" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="4" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="5" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="6" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="7" Grid.Column="0"  />
+            <BoxView Color="#ffffff" Grid.Row="8" Grid.Column="0"  />
+
+
+            <!-- label-->
+            <Label Grid.Row="0" Margin="20,20,0,20"   FontSize="Medium"  Text="Permisos"
+                                 TextColor="Gray"  />
+            <!--switch -->
+            <Switch Grid.Column="0"  Grid.Row="0" Margin="0,20,10,0" x:Name="switch" Scale="1.5"     
+                HorizontalOptions="EndAndExpand"  
+                  OnColor="#76B78F"  ThumbColor="Red"/>
+            <!--se utiliza scale para el tamano del switch -->
+            <!--se utiliza un color rojo ya que blanco no se ve -->
+
+
+                <!--label -->
+            <Label  Grid.Row="1" Margin="20,20,20,20" FontSize="Medium"  Text="Notificaciones"
+                                 TextColor="Gray"  />
+                <Switch Grid.Column="0" Grid.Row="1" Margin="0,20,10,0" x:Name="switch1" Scale="1.5" 
+                    HorizontalOptions="EndAndExpand" OnColor="#76B78F"  ThumbColor="Red"/>
+                    
+                
+            
+                <Label Grid.Row="2" Margin="20,20,20,20" FontSize="Medium"   Text="Servicios de Localizacion"
+                                 TextColor="Gray"  />
+            
+
+            <Switch Grid.Column="0" Grid.Row="2" Margin="0,20,10,0" x:Name="switch2" Scale="1.5" 
+                 HorizontalOptions="End"
+                  OnColor="#76B78F"  ThumbColor="Red"/>
+
+            <!--se utiliza scale para el tamano del switch -->
+            <!--se utiliza un color rojo ya que blanco no se ve -->
+
+
+            <!--label -->
+
+            <Label Grid.Row="3" Margin="20,20,20,20" FontSize="Medium"  Text="Sonidos"
+                                 TextColor="Gray"  />
+           
+            
+                <Switch Grid.Column="0" Grid.Row="3" Margin="0,20,10,0" x:Name="switch3" Scale="1.5" 
+                 HorizontalOptions="EndAndExpand"
+                  OnColor="#76B78F"  ThumbColor="Red"/>
+
+            <!--se utiliza scale para el tamano del switch -->
+            <!--se utiliza un color rojo ya que blanco no se ve -->
+
+
+            <!--label -->
+
+            <Label Grid.Row="4" Margin="20,20,20,20" FontSize="Medium"   Text="Adds"
+                                 TextColor="Gray"  />
+            
+           
+                <Switch Grid.Column="0" Grid.Row="4" Margin="0,20,10,0" x:Name="switch4" Scale="1.5" 
+                HorizontalOptions="EndAndExpand"
+                  OnColor="#76B78F"  ThumbColor="Red"/>
+
+            <!--se utiliza scale para el tamano del switch -->
+            <!--se utiliza un color rojo ya que blanco no se ve -->
+
+
+            <!--label -->
+            <StackLayout Grid.Row="5" Margin="20,20,20,20">
+                <Label FontSize="Medium"  Text="Ayuda"
+                                 TextColor="Gray" />
+        </StackLayout>
+            <!--label -->
+            <StackLayout Grid.Row="6" Margin="20,20,20,20">
+                <Label  FontSize="Medium" Text="Sobre la App"
+                                 TextColor="Gray" />
+        </StackLayout>
+            <!--label -->
+            <StackLayout Grid.Row="7" Margin="20,20,20,20">
+                <Label  FontSize="Medium"  Text="Send Feedback"
+                                 TextColor="Gray" />
+        </StackLayout>
+            <!--label -->
+            <StackLayout Grid.Row="8" Margin="20,20,20,20">
+                <Label  FontSize="Medium"  Text="Soporte"
+                                 TextColor="Gray" />
+            </StackLayout>
+        </Grid>
+
+
+        <!--boton -->
+        <Button Text="Sign Out" 
+                   x:Name="Butts"
+                BorderColor="Transparent"
+                BorderWidth="1" FontAttributes="Bold"
+                BackgroundColor="#C70E67" 
+                TextColor="White" 
+                HorizontalOptions="Fill"
+                WidthRequest="200"
+                HeightRequest="70" 
+                Margin="10,10,10,20" 
+                VerticalOptions="Center"/>
+        <!-- cieere de boton -->
+    </StackLayout>
+
+</ContentPage>
